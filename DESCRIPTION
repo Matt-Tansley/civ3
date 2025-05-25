@@ -1,19 +1,20 @@
 Package: civ3
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Data on Civ 3
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Matthew", "Tansley",
+      email = "30matthewt@gmail.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: A dataset containing information about the civilisations in Sid Meier's Civilization 3.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
 URL: https://github.com/Matt-Tansley/civ3
 BugReports: https://github.com/Matt-Tansley/civ3/issues
+Depends: 
+    R (>= 3.5)
