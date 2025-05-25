@@ -8,45 +8,39 @@
 [![R-CMD-check](https://github.com/Matt-Tansley/civ3/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Matt-Tansley/civ3/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of civ3 is to …
+civ3 is a data package containing data on the civilisations from Sid
+Meier’s Civilization 3.
 
 ## Installation
 
-You can install the development version of civ3 like so:
+Install the package from GitHub like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("Matt-Tansley/civ3")
 ```
 
-## Example
+## Usage
 
-This is a basic example which shows you how to solve a common problem:
+This package creates the `civ3` data object.
+
+Use `?civ3` for more info on the data and its format.
 
 ``` r
 library(civ3)
-## basic example code
+
+head(civ3)
+#>           name    leader                  strengths
+#> 1     American   Lincoln  Expansionist, Industrious
+#> 2       Arabic  Abu Bakr    Expansionist, Religious
+#> 3        Aztec Montezuma Agricultural, Militaristic
+#> 4   Babylonian Hammurabi      Religious, Scientific
+#> 5    Byzantine  Theodora      Scientific, Seafaring
+#> 6 Carthaginian  Hannibal     Industrious, Seafaring
+#>                      starting_techs        unique_unit
+#> 1                  Pottery, Masonry               F-15
+#> 2        Ceremonial Burial, Pottery      Ansar Warrior
+#> 3             Warrior Code, Pottery     Jaguar Warrior
+#> 4 Bronze Working, Ceremonial Burial             Bowman
+#> 5          Bronze Working, Alphabet             Dromon
+#> 6                 Alphabet, Masonry Numidian Mercenary
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
